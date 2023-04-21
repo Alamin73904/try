@@ -390,7 +390,7 @@ def mainx():
     elif mahin in ["3","03"]:
         cr()
     elif mahin in ["4","04"]:
-        mainx2()
+        mahin()
     elif mahin in ["5","05"]:
         sep()
     elif mahin in ["6","06"]:
@@ -403,7 +403,7 @@ def mainx():
      print(f'{gen}{RED}Exited {H}REAL-KING {P}Terminal ');os.system("xdg-open https://www.facebook.com/THE.REAL.K1NG");time.sleep(3);os.system('xdg-open https://www.facebook.com/groups/fb.king.cyber/?ref=share');exit()
     else:
      print(f"{dot}{M}Don't Select Wrong Options ");os.system("xdg-open https://www.facebook.com/FB.KING.MAHIN.NAME.TOH.SONSO?mibextid=ZbWKwL");mainx()
-def mainx2():
+def mahin():
     os.system("clear")
     banner()
     print(f"{K} [{H}1{K}] {WHITE}Random Cloning {H}6 Digit")
