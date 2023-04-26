@@ -57,7 +57,7 @@ for xd in range(10000):
 	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-for agent in range(20000):
+for agent in range(10000):
 	aa='Mozilla/5.0 (Linux; Android 6.0.1;'
 	b=random.choice(['6','7','8','9','10','11','12','13'])
 	c='en-us; 10; T-Mobile myTouch 3G Slide Build/GRI40)I148V)'
